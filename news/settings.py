@@ -11,10 +11,10 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
+from celery.schedules import crontab
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
@@ -27,6 +27,17 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+BROKER_URL = 'amqp://guest:guest@localhost:5672//'
+
+CELERY_TIMEZONE = 'UTC'
+CELERYBEAT_SCHEDULE = {
+    # Should execute every day at 7 p.m. Eastern.
+    're-randomize-magazines': {
+        'task': 'articles.tasks.re_randomize_magazines',
+        'schedule': crontab(hour=9, minute=25),
+        'args': [],
+    },
+}
 
 # Application definition
 
@@ -38,7 +49,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'newsfeed',
+    'rest_framework.authtoken',
+    'debug_toolbar',
+    'accounts',
+    'magazines',
+    'articles',
+    'topics',
+    'stats'
+
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -50,9 +68,25 @@ MIDDLEWARE_CLASSES = [
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'news.urls'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ),
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    # 'PAGE_SIZE': 5
+    'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',
+                                'rest_framework.filters.SearchFilter')
+}
+
+
+AUTH_USER_MODEL = 'accounts.User'
 
 TEMPLATES = [
     {
@@ -72,21 +106,25 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'news.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
+
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'news',
         'USER': 'news',
-        'PASSWORD': 'current93',
+        'PASSWORD': 'root',
         'HOST': 'localhost',
         'PORT': '',
     }
 }
 
+APPEND_SLASH=False
+
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
@@ -106,7 +144,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
@@ -119,6 +156,15 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+
+
+AUTHENTICATION_BACKENDS = (
+
+    # Django
+    'django.contrib.auth.backends.ModelBackend',
+
+)
 
 
 # Static files (CSS, JavaScript, Images)
