@@ -9,6 +9,12 @@ class IsMagazineAdmin(BasePermission):
 
 # class IsMagazineAdminOrSafeMethod
 
+class IsAuthenticatedOrSafeMethod(BasePermission):
+
+    def has_permission(self, request, view):
+        return request.user.is_authenticated() or request.method.lower() in ["get", "options"]
+
+
 class IsAuthenticated(IsAuth):
 
     def has_permission(self, request, view):

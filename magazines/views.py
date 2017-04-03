@@ -1,7 +1,7 @@
 from rest_framework import viewsets
 from .serializers import MagazineSerializer, Magazine
 from rest_framework.response import Response
-from rest_framework.permissions import IsAuthenticated
+from core.permissions import IsAuthenticated
 from rest_framework import filters
 from django.db.models import F
 
@@ -25,7 +25,6 @@ class MagazineSubscribeView(viewsets.ViewSet):
     permission_classes = (IsAuthenticated,)
 
     def retrieve(self, request, pk, format=None):
-
         request.user.magazines.add(Magazine.objects.get(slug=pk))
 
         return Response({'message': 'Successfully subscribed'})

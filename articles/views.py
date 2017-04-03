@@ -1,20 +1,27 @@
+import json
+
 from rest_framework import viewsets
-import urllib.request as urllib
+import urllib.request as urllib2
+import re
+
+from rest_framework.views import APIView
 from rest_framework.viewsets import ViewSet
 from bs4 import BeautifulSoup
 from rest_framework import status
-from core.permissions import IsAuthenticated
+from core.permissions import IsAuthenticated, IsAuthenticatedOrSafeMethod
+from magazines.models import Magazine
 from .models import Article
 from stats.models import UserView
 from .serializers import ArticleSerializer
 from rest_framework import filters
 from rest_framework.response import Response
+from urllib.parse import urlparse
 
 
 class ArticleViewSet(viewsets.ModelViewSet):
     queryset = Article.objects.all().select_related('magazine').prefetch_related('topics')
     serializer_class = ArticleSerializer
-    permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticatedOrSafeMethod,)
     filter_backends = (filters.DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter)
     filter_fields = ('topics', 'magazine')
     ordering_fields = ('created', 'views',)
@@ -47,7 +54,7 @@ class ArticleByMagazineViewSet(viewsets.ModelViewSet):
 class ArticleHistoryViewSet(viewsets.ModelViewSet):
     permission_classes = (IsAuthenticated,)
     serializer_class = ArticleSerializer
-    http_method_names = ['get']
+    http_method_names = ['get', 'options']
     queryset = Article.objects.all().order_by('created')
 
     def get_queryset(self):
@@ -63,8 +70,26 @@ class SaveArticleViewSet(viewsets.ViewSet):
         return Response({'message': 'Sucessfully saved'})
 
 
+class BulkHistory(ViewSet):
+    permission_classes = (IsAuthenticatedOrSafeMethod,)
+
+    def list(self, request):
+        return Response({"message": "Put articles from cache to db"})
+
+    def create(self, request, *args, **kwargs):
+        article_ids = request.POST.get("ids", 4)
+        print(article_ids, '====')
+
+        return Response({"ids": article_ids})
+
+
 class ParseArticleViewSet(ViewSet):
     permission_classes = (IsAuthenticated,)
+
+    @staticmethod
+    def is_absolute(url):
+        print(url + '\n')
+        return url.startswith("http")
 
     def list(self, request, format=None):
 
@@ -82,15 +107,30 @@ class ParseArticleViewSet(ViewSet):
             'Accept-Language': 'en-US,en;q=0.8',
             'Connection': 'keep-alive'
         }
-        req = urllib.Request(url=url, headers=hdr)
-        page = urllib.urlopen(req)
-        page = BeautifulSoup(page, "html.parser")
+        req = urllib2.Request(url=url, headers=hdr)
+        raw_page = urllib2.urlopen(req)
+        page = BeautifulSoup(raw_page, "html.parser")
+        content = page.prettify().encode('UTF-8')
         images = []
         for img in page.find_all("img"):
             images.append(img.get("src"))
+        content = re.findall('url\(.*?\)', str(content))
+        for occurrence in content:
+            occurrence = occurrence[4:-1]
+            if occurrence[0] == '\\':
+                occurrence = occurrence[2:]
+            if occurrence[-1] == '\'':
+                occurrence = occurrence[:-2]
+                occurrence = Magazine.objects.filter(admin=request.user).first().website + '/' + occurrence
+            images.append(occurrence)
+
+        for index, image in enumerate(images):
+            if not self.is_absolute(image):
+                images[index] = request.user.magazine.website + image
+
         return Response({
             "title": page.title.get_text(),
-            "images": images
+            "images": images,
         })
 
         # except:

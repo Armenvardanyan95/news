@@ -20,9 +20,11 @@ class User(AbstractUser):
     def save(self, force_insert=False, force_update=False, using=None, update_fields=None):
 
         self.username = self.email
-        super(User, self).save(force_insert, force_update, using, update_fields)
+        return super(User, self).save(force_insert, force_update, using, update_fields)
 
-        return self
+    @property
+    def magazine(self):
+        return Magazine.objects.filter(admin=self).first()
 
     def __unicode__(self):
         return self.email

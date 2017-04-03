@@ -1,5 +1,5 @@
 from django.db import models
-from magazines.models import Magazine
+# from magazines.models import Magazine
 from topics.models import Topic
 from utils.general import generate_randomizer
 
@@ -10,7 +10,7 @@ class Article(models.Model):
     brief = models.CharField(max_length=250, blank=True)
     reference = models.URLField()
     image = models.URLField()
-    magazine = models.ForeignKey(Magazine)
+    magazine = models.ForeignKey("magazines.Magazine")
     topics = models.ManyToManyField(Topic)
     randomizer = models.PositiveIntegerField()
     index = models.PositiveIntegerField(blank=True, null=True)

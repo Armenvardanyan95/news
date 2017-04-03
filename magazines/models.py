@@ -1,6 +1,8 @@
 from django.db import models
+
+from articles.models import Article
+from topics.models import Topic
 from utils.general import generate_randomizer
-# from topics.models import Topic
 
 
 class Magazine(models.Model):
@@ -24,6 +26,11 @@ class Magazine(models.Model):
     def __str__(self):
         return self.title
 
-    def save(self, **kwargs):
-        self.randomizer = generate_randomizer(Magazine)
-        super().save(force_insert=True)
+    @property
+    def get_some_topics(self):
+        return Topic.objects.filter(id__in=Article.objects.filter(magazine=self).values('id')).order_by('?').values('id', 'title')[:4]
+
+    # def save(self, **kwargs):
+    #     if not self.id:
+    #         self.randomizer = generate_randomizer(Magazine)
+    #     super().save(force_insert=True)
