@@ -1,5 +1,4 @@
 from django.db import models
-# from magazines.models import Magazine
 from topics.models import Topic
 from utils.general import generate_randomizer
 
@@ -38,3 +37,10 @@ class Article(models.Model):
     def save(self, **kwargs):
         self.randomizer = generate_randomizer(Article)
         super().save(force_insert=True)
+
+
+class SavedArticle(models.Model):
+
+    user = models.ForeignKey("accounts.User")
+    article = models.ForeignKey(Article)
+    save_date = models.DateTimeField(auto_now_add=True)

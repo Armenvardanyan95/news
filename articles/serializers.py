@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Article
+from .models import Article, SavedArticle
 from stats.models import Share
 from magazines.models import Magazine
 from utils.general import string_likeness, generate_index
@@ -47,5 +47,10 @@ class ArticleSerializer(serializers.HyperlinkedModelSerializer):
         request = self.context['request']
         if not request.user.is_authenticated():
             return False
+        return SavedArticle.objects.filter(user=request.user).exists()
 
-        return instance in request.user.saved_articles.all()
+
+class SavedArticleSerializer(serializers.HyperlinkedModelSerializer):
+
+    class Meta:
+        model = SavedArticle

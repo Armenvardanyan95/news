@@ -2,9 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8410f98f-5b08-47ca-9b5a-e72809a1192e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/news.iml" afterPath="$PROJECT_DIR$/.idea/news.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/accounts/migrations/0002_auto_20170429_1528.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/accounts/migrations/0002_user_topics.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/accounts/migrations/0003_auto_20170202_2034.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/accounts/migrations/0004_user_magazines.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/accounts/migrations/0005_auto_20170207_0829.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/accounts/migrations/0006_auto_20170207_0829.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/accounts/migrations/0007_auto_20170224_2354.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/articles/migrations/0002_article_index.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/articles/migrations/0003_article_views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/articles/migrations/0004_auto_20170310_0100.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/articles/migrations/0005_auto_20170310_0100.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magazines/migrations/0002_magazine_admin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magazines/migrations/0003_magazine_auth_views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magazines/migrations/0004_magazine_site_name.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/topics/migrations/0002_topic_keywords.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/topics/migrations/0003_auto_20170202_1532.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/topics/migrations/0004_auto_20170205_0012.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/topics/migrations/0005_auto_20170205_0013.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/topics/migrations/0006_auto_20170205_0015.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/topics/migrations/0007_topic_related_topics.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/topics/migrations/0008_topic_abbr_arm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/topics/migrations/0009_topic_abbr_eng.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/topics/migrations/0010_topic_title_eng.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/stats/migrations/0002_share.py" afterPath="$PROJECT_DIR$/articles/migrations/0002_savedarticle.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/models.py" afterPath="$PROJECT_DIR$/accounts/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/articles/models.py" afterPath="$PROJECT_DIR$/articles/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/articles/serializers.py" afterPath="$PROJECT_DIR$/articles/serializers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/articles/views.py" afterPath="$PROJECT_DIR$/articles/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/urls.py" afterPath="$PROJECT_DIR$/news/urls.py" />
     </list>
     <ignored path="news.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +64,20 @@
     <favorites_list name="news" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/articles/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1995">
+              <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -85,7 +124,6 @@
         <option value="$PROJECT_DIR$/articles/serializers.py" />
         <option value="$PROJECT_DIR$/articles/tests.py" />
         <option value="$PROJECT_DIR$/core/permissions.py" />
-        <option value="$PROJECT_DIR$/articles/views.py" />
         <option value="$PROJECT_DIR$/core/tests.py" />
         <option value="$PROJECT_DIR$/news/settings.py" />
         <option value="$PROJECT_DIR$/news/urls.py" />
@@ -95,6 +133,7 @@
         <option value="$PROJECT_DIR$/topics/serializers.py" />
         <option value="$PROJECT_DIR$/topics/tests.py" />
         <option value="$PROJECT_DIR$/topics/views.py" />
+        <option value="$PROJECT_DIR$/articles/views.py" />
       </list>
     </option>
   </component>
@@ -488,9 +527,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20095949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20095949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -684,7 +723,7 @@
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-            <marker date="1496595381148" expanded="true" signature="175:1249" placeholder="..." />
+            <marker date="1496596120429" expanded="true" signature="1397:1403" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -704,16 +743,6 @@
         <state relative-caret-position="275">
           <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/articles/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="59" column="49" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -822,6 +851,16 @@
           <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/articles/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>

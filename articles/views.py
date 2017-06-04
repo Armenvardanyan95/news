@@ -7,21 +7,19 @@ import re
 from rest_framework.views import APIView
 from rest_framework.viewsets import ViewSet
 from bs4 import BeautifulSoup
-from rest_framework import status
 from core.permissions import IsAuthenticated, IsAuthenticatedOrSafeMethod
 from magazines.models import Magazine
-from .models import Article
+from .models import Article, SavedArticle
 from stats.models import UserView
-from .serializers import ArticleSerializer
+from .serializers import ArticleSerializer, SavedArticleSerializer
 from rest_framework import filters
 from rest_framework.response import Response
-from urllib.parse import urlparse
 
 
 class ArticleViewSet(viewsets.ModelViewSet):
     queryset = Article.objects.all().select_related('magazine').prefetch_related('topics')
     serializer_class = ArticleSerializer
-    permission_classes = (IsAuthenticatedOrSafeMethod,)
+    # permission_classes = (IsAuthenticatedOrSafeMethod,)
     filter_backends = (filters.DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter)
     filter_fields = ('topics', 'magazine')
     ordering_fields = ('created', 'views',)
@@ -65,9 +63,20 @@ class SaveArticleViewSet(viewsets.ViewSet):
     permission_classes = (IsAuthenticated,)
 
     def retrieve(self, request, pk, format=None):
-        request.user.saved_articles.add(Article.objects.get(id=pk))
+        article = Article.objects.get(id=pk)
+        SavedArticle.objects.create(article=article, user=request.user)
 
         return Response({'message': 'Sucessfully saved'})
+
+
+class SavedArticlesViewSet(viewsets.ModelViewSet):
+    queryset = SavedArticle.objects.all().order_by("save_date")
+    serializer_class = SavedArticleSerializer
+    permission_classes = (IsAuthenticated, )
+
+    def list(self, request, *args, **kwargs):
+        print(self.queryset.count(), 'fuuuuuuck')
+        return super().list(request, args, kwargs)
 
 
 class BulkHistory(ViewSet):
@@ -136,6 +145,3 @@ class ParseArticleViewSet(ViewSet):
         # except:
         #     return Response({"message": "Could not parse page"}, status=status.HTTP_404_NOT_FOUND)
 
-
-
->>>>>>> Changes
