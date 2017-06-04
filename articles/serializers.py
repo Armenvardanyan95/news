@@ -47,10 +47,12 @@ class ArticleSerializer(serializers.HyperlinkedModelSerializer):
         request = self.context['request']
         if not request.user.is_authenticated():
             return False
-        return SavedArticle.objects.filter(user=request.user).exists()
+        return SavedArticle.objects.filter(user=request.user, article=instance).exists()
 
 
-class SavedArticleSerializer(serializers.HyperlinkedModelSerializer):
+class SavedArticleSerializer(serializers.ModelSerializer):
+    article = serializers.JSONField(source='get_article')
 
     class Meta:
         model = SavedArticle
+        fields = ('save_date', 'article',)

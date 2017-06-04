@@ -64,19 +64,29 @@ class SaveArticleViewSet(viewsets.ViewSet):
 
     def retrieve(self, request, pk, format=None):
         article = Article.objects.get(id=pk)
+        if SavedArticle.objects.filter(article=article).exists():
+            return Response({"message": "Already saved"})
         SavedArticle.objects.create(article=article, user=request.user)
 
-        return Response({'message': 'Sucessfully saved'})
+        return Response({'message': 'Successfully saved'})
+
+
+class RemoveSavedArticleViewset(viewsets.ViewSet):
+    permission_classes = (IsAuthenticated,)
+
+    def retrieve(self, request, pk, format=None):
+        article = Article.objects.get(id=pk)
+        SavedArticle.objects.filter(article=article, user=request.user).first().delete()
+        return Response({"message": "Successfully unsaved"})
 
 
 class SavedArticlesViewSet(viewsets.ModelViewSet):
-    queryset = SavedArticle.objects.all().order_by("save_date")
+    queryset = SavedArticle.objects.all().order_by("-save_date")
     serializer_class = SavedArticleSerializer
     permission_classes = (IsAuthenticated, )
 
-    def list(self, request, *args, **kwargs):
-        print(self.queryset.count(), 'fuuuuuuck')
-        return super().list(request, args, kwargs)
+    def get_queryset(self):
+        return self.queryset.filter(user=self.request.user)
 
 
 class BulkHistory(ViewSet):
