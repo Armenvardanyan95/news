@@ -1,0 +1,15 @@
+defusedxml==0.4.1
+Django==1.9.5
+django-allauth==0.25.2
+django-filter==1.0.1
+djangorestframework==3.5.3
+Markdown==2.6.8
+oauthlib==1.1.2
+Pillow==3.2.0
+PyJWT==1.4.0
+python-social-auth==0.2.1
+python3-openid==3.0.10
+requests==2.10.0
+requests-oauthlib==0.3.1
+six==1.10.0
+virtualenv==15.1.0

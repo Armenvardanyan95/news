@@ -1,5 +1,6 @@
 from rest_framework.viewsets import ViewSet
-from rest_framework.permissions import IsAuthenticated, IsAdminUser
+from rest_framework.permissions import IsAdminUser
+from core.permissions import IsAuthenticated
 from core.permissions import IsMagazineAdmin
 from rest_framework.response import Response
 from django.db.models import F
@@ -9,7 +10,7 @@ from articles.models import Article
 
 class UserViewArticleViewSet(ViewSet):
     permission_classes = (IsAuthenticated,)
-    http_method_names = ['get']
+    http_method_names = ['options', 'get']
 
     def retrieve(self, request, pk, format=None):
         article = Article.objects.get(pk=pk)

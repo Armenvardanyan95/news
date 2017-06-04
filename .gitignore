@@ -1,2 +1,8 @@
-.idea
+.idea/*
 *.pyc
+htmlcov
+news/Include
+news/tcl
+news/Lib
+.coverage
+news/Scripts

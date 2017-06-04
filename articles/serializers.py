@@ -2,7 +2,6 @@ from rest_framework import serializers
 from .models import Article
 from stats.models import Share
 from magazines.models import Magazine
-from topics.serializers import TopicSerializer
 from utils.general import string_likeness, generate_index
 
 
@@ -12,8 +11,7 @@ class ArticleSerializer(serializers.HyperlinkedModelSerializer):
     magazine = serializers.HyperlinkedRelatedField(view_name='magazine-detail', queryset=Magazine.objects.all(),
                                                    lookup_field='slug')
     magazine_details = serializers.JSONField(source='get_magazine_details', read_only=True)
-
-    topics = TopicSerializer(read_only=True, many=True)
+    topics = serializers.JSONField(source='get_topics')
     is_shared = serializers.SerializerMethodField()
     is_saved = serializers.SerializerMethodField()
 

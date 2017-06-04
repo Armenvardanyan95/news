@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
-from celery.schedules import crontab
+# from celery.schedules import crontab
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -30,14 +30,14 @@ ALLOWED_HOSTS = []
 BROKER_URL = 'amqp://guest:guest@localhost:5672//'
 
 CELERY_TIMEZONE = 'UTC'
-CELERYBEAT_SCHEDULE = {
-    # Should execute every day at 7 p.m. Eastern.
-    're-randomize-magazines': {
-        'task': 'articles.tasks.re_randomize_magazines',
-        'schedule': crontab(hour=9, minute=25),
-        'args': [],
-    },
-}
+# CELERYBEAT_SCHEDULE = {
+#     # Should execute every day at 7 p.m. Eastern.
+#     're-randomize-magazines': {
+#         'task': 'articles.tasks.re_randomize_magazines',
+#         'schedule': crontab(hour=9, minute=25),
+#         'args': [],
+#     },
+# }
 
 # Application definition
 
@@ -79,8 +79,8 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
     ),
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-    # 'PAGE_SIZE': 5
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 20,
     'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',
                                 'rest_framework.filters.SearchFilter')
 }
@@ -114,8 +114,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'news',
-        'USER': 'news',
-        'PASSWORD': 'root',
+        'USER': 'postgres',
+        'PASSWORD': 'current93',
         'HOST': 'localhost',
         'PORT': '',
     }

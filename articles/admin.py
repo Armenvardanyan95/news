@@ -7,6 +7,7 @@ class ArticleAdmin(admin.ModelAdmin):
     filter_horizontal = ('topics',)
     list_display = ('magazine', 'title',)
     show_full_result_count = True
+    save_as = True
 
     class Meta:
         model = Article

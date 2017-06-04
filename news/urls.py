@@ -4,7 +4,7 @@ from django.contrib import admin
 from topics.views import TopicViewSet, TopicSubscribeView, TopicUnsubscribeView
 from magazines.views import MagazineViewSet, MagazineSubscribeView, MagazineUnsubscribeView
 from articles.views import ArticleViewSet, ArticleByTopicViewSet, ArticleByMagazineViewSet, ArticleHistoryViewSet,\
-    SaveArticleViewSet
+    SaveArticleViewSet, ParseArticleViewSet
 from accounts.views import UsersViewSet, GetAuthToken
 from stats.views import UserViewArticleViewSet, ShareViewSet, StatisticsViewSet
 
@@ -23,6 +23,7 @@ router.register('articles/custom/by-magazine', ArticleByMagazineViewSet, base_na
 router.register('articles/custom/history', ArticleHistoryViewSet, base_name='articles/custom/history')
 router.register('articles/save', SaveArticleViewSet, base_name='articles/save')
 router.register('users', UsersViewSet)
+router.register('parse', ParseArticleViewSet, base_name='parse')
 router.register('stats-auth', UserViewArticleViewSet, base_name='stats-auth')
 router.register('statistics', StatisticsViewSet, base_name='statistics')
 router.register('share', ShareViewSet, base_name='share')
@@ -32,5 +33,4 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include(router.urls)),
     url(r'get-auth-token/$', GetAuthToken.as_view(), name='get-auth-token'),
-
 ]
