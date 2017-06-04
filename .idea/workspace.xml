@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8410f98f-5b08-47ca-9b5a-e72809a1192e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/permissions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/magazines/serializers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/magazines/tasks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/topics/serializers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/topics/tests/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/topics/tests/endpoints.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/general.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/transliteration.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newsfeed/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newsfeed/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newsfeed/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newsfeed/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newsfeed/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/newsfeed/views.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/newsfeed/__init__.py" afterPath="$PROJECT_DIR$/accounts/urls.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/newsfeed/migrations/__init__.py" afterPath="$PROJECT_DIR$/articles/serializers.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/newsfeed/serializers.py" afterPath="$PROJECT_DIR$/accounts/serializers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/news.iml" afterPath="$PROJECT_DIR$/.idea/news.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/settings.py" afterPath="$PROJECT_DIR$/news/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/urls.py" afterPath="$PROJECT_DIR$/news/urls.py" />
     </list>
     <ignored path="news.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,50 +38,7 @@
     <favorites_list name="news" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/topics/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/topics/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/magazines/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -128,32 +66,35 @@
         <option value="$PROJECT_DIR$/utils/transliteration.py" />
         <option value="$PROJECT_DIR$/magazines/serializers.js" />
         <option value="$PROJECT_DIR$/newsfeed/models.py" />
-        <option value="$PROJECT_DIR$/topics/serializers.py" />
         <option value="$PROJECT_DIR$/accounts/views.py" />
         <option value="$PROJECT_DIR$/topics/tests/endpoints.py" />
         <option value="$PROJECT_DIR$/magazines/serializers.py" />
-        <option value="$PROJECT_DIR$/core/permissions.py" />
         <option value="$PROJECT_DIR$/stats/models.py" />
         <option value="$PROJECT_DIR$/utils/general.py" />
-        <option value="$PROJECT_DIR$/stats/views.py" />
         <option value="$PROJECT_DIR$/magazines/views.py" />
         <option value="$PROJECT_DIR$/magazines/tasks.py" />
-        <option value="$PROJECT_DIR$/topics/views.py" />
         <option value="$PROJECT_DIR$/magazines/admin.py" />
         <option value="$PROJECT_DIR$/magazines/models.py" />
         <option value="dbtable:/7068dbe2/5fede16a-d0d9-4a5f-8a20-44902084d522/news.public.magazines_magazine" />
-        <option value="$PROJECT_DIR$/articles/models.py" />
-        <option value="$PROJECT_DIR$/news/settings.py" />
         <option value="$PROJECT_DIR$/accounts/serializers.py" />
         <option value="$PROJECT_DIR$/accounts/models.py" />
-        <option value="$PROJECT_DIR$/articles/views.py" />
-        <option value="$PROJECT_DIR$/news/urls.py" />
-        <option value="$PROJECT_DIR$/articles/serializers.py" />
         <option value="$PROJECT_DIR$/utils/__init__.py" />
-        <option value="$PROJECT_DIR$/articles/admin.py" />
-        <option value="$PROJECT_DIR$/topics/models.py" />
-        <option value="$PROJECT_DIR$/topics/admin.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/articles/admin.py" />
+        <option value="$PROJECT_DIR$/articles/models.py" />
+        <option value="$PROJECT_DIR$/articles/serializers.py" />
+        <option value="$PROJECT_DIR$/articles/tests.py" />
+        <option value="$PROJECT_DIR$/core/permissions.py" />
+        <option value="$PROJECT_DIR$/articles/views.py" />
+        <option value="$PROJECT_DIR$/core/tests.py" />
+        <option value="$PROJECT_DIR$/news/settings.py" />
+        <option value="$PROJECT_DIR$/news/urls.py" />
+        <option value="$PROJECT_DIR$/stats/views.py" />
+        <option value="$PROJECT_DIR$/topics/admin.py" />
+        <option value="$PROJECT_DIR$/topics/models.py" />
+        <option value="$PROJECT_DIR$/topics/serializers.py" />
+        <option value="$PROJECT_DIR$/topics/tests.py" />
+        <option value="$PROJECT_DIR$/topics/views.py" />
       </list>
     </option>
   </component>
@@ -164,10 +105,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="27" />
-    <option name="width" value="1368" />
-    <option name="height" value="742" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -195,7 +136,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -214,12 +154,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../me" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -249,17 +204,6 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/general.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -543,13 +487,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="27" width="1368" height="742" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19908814" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20095949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -561,7 +506,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -594,335 +538,15 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://DATABASE/5fede16a-d0d9-4a5f-8a20-44902084d522">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>5fede16a-d0d9-4a5f-8a20-44902084d522</OriginalElement>
-          <nodes>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_description</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_index</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_init_privs</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_stat_sys_indexes</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_stat_sys_tables</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_replication_origin_status</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_locks</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_rules</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_statio_user_indexes</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_stat_activity</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_attrdef</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_settings</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_policies</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_stat_xact_all_tables</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_stat_bgwriter</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_ts_parser</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.django_content_type</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_class</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_statio_all_tables</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.articles_article_topics</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_group</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.stats_basicview</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_collation</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.accounts_user_user_permissions</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_shdepend</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_replication_origin</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_cursors</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_largeobject_metadata</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_opclass</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_config</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_statio_user_sequences</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_foreign_data_wrapper</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_range</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_stat_wal_receiver</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_amop</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_statio_all_sequences</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.accounts_user_magazines</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_seclabels</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_statio_user_tables</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_namespace</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_enum</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_available_extension_versions</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_tables</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.accounts_user_topics</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_prepared_xacts</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_statio_sys_sequences</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.accounts_user</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_shseclabel</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.magazines_magazine</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_constraint</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_prepared_statements</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_db_role_setting</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_stat_user_tables</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_rewrite</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_replication_slots</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_amproc</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_stat_xact_user_tables</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.auth_group</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.stats_userview</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.auth_permission</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_stat_database</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_operator</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.django_session</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_extension</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.topics_topic</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_tablespace</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_stat_all_indexes</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.django_admin_log</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_stat_progress_vacuum</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_authid</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_user</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_language</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_stat_archiver</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_am</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_shdescription</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_timezone_names</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.accounts_user_groups</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_user_mapping</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_ts_config</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_stat_all_tables</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_stats</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.auth_group_permissions</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_opfamily</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_foreign_table</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_stat_ssl</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_stat_xact_sys_tables</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_indexes</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.authtoken_token</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.django_migrations</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_auth_members</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_stat_xact_user_functions</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_timezone_abbrevs</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_available_extensions</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_policy</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_foreign_server</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_event_trigger</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_stat_database_conflicts</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_ts_config_map</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_statio_all_indexes</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_attribute</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_views</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_statio_sys_indexes</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_ts_dict</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_database</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_roles</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_stat_user_indexes</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_pltemplate</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_aggregate</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_stat_user_functions</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_ts_template</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_proc</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_stat_replication</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_largeobject</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_matviews</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_cast</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_transform</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_trigger</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.articles_article</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_seclabel</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_user_mappings</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_type</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_default_acl</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_shadow</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_depend</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_statistic</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_conversion</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_file_settings</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.VIEW:news.pg_catalog.pg_statio_sys_tables</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.pg_catalog.pg_inherits</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.4318840579710145" x="2122.0" y="2000.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/5fede16a-d0d9-4a5f-8a20-44902084d522.SCHEMA:news.public">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>5fede16a-d0d9-4a5f-8a20-44902084d522.SCHEMA:news.public</OriginalElement>
-          <nodes>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.authtoken_token</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.auth_permission</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.stats_basicview</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.accounts_user_user_permissions</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.django_admin_log</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.accounts_user_topics</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.accounts_user</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.django_migrations</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.articles_article</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.django_session</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.magazines_magazine</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.accounts_user_groups</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.auth_group_permissions</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.accounts_user_magazines</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.django_content_type</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.topics_topic</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.auth_group</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.stats_userview</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.articles_article_topics</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.5531694695989651" x="986.0" y="403.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.accounts_user_magazines">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.accounts_user_magazines</OriginalElement>
-          <nodes>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.accounts_user_magazines</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.magazines_magazine</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.9115191986644408" x="188.0" y="170.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.accounts_user_groups">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.accounts_user_groups</OriginalElement>
-          <nodes>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.auth_permission</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.accounts_user_user_permissions</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.accounts_user_topics</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.accounts_user_magazines</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.django_content_type</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.topics_topic</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.auth_group</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.magazines_magazine</node>
-            <node x="" y="">5fede16a-d0d9-4a5f-8a20-44902084d522.TABLE:news.public.accounts_user_groups</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.60734149054505" x="467.0" y="400.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/topics/tests/endpoints.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/7068dbe2/5fede16a-d0d9-4a5f-8a20-44902084d522/news.public.stats_userview">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/django/views/generic/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1051">
-          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/rest_framework/generics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="208" column="24" selection-start-line="208" selection-start-column="24" selection-end-line="208" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/rest_framework/mixins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/django/db/models/manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/topics/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/rest_framework/permissions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/rest_framework/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="97" column="6" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/rest_framework/viewsets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-295">
-          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/7068dbe2/5fede16a-d0d9-4a5f-8a20-44902084d522/news.public.stats_share">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/permissions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/7068dbe2/5fede16a-d0d9-4a5f-8a20-44902084d522/news.public.stats_userview" />
+    <entry file="file:///usr/local/lib/python3.4/dist-packages/django/views/generic/base.py" />
+    <entry file="file:///usr/local/lib/python3.4/dist-packages/rest_framework/generics.py" />
+    <entry file="file:///usr/local/lib/python3.4/dist-packages/rest_framework/mixins.py" />
+    <entry file="file:///usr/local/lib/python3.4/dist-packages/django/db/models/manager.py" />
+    <entry file="file:///usr/local/lib/python3.4/dist-packages/rest_framework/permissions.py" />
+    <entry file="file:///usr/local/lib/python3.4/dist-packages/rest_framework/views.py" />
+    <entry file="file:///usr/local/lib/python3.4/dist-packages/rest_framework/viewsets.py" />
+    <entry file="dbDummy://dbtable:/7068dbe2/5fede16a-d0d9-4a5f-8a20-44902084d522/news.public.stats_share" />
     <entry file="file://$PROJECT_DIR$/utils/general.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -934,13 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stats/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="59" column="68" selection-start-line="59" selection-start-column="68" selection-end-line="59" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -958,37 +575,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/topics/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/7068dbe2/5fede16a-d0d9-4a5f-8a20-44902084d522/news.public.topics_topic">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/7068dbe2/5fede16a-d0d9-4a5f-8a20-44902084d522/news.public.accounts_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/7068dbe2/5fede16a-d0d9-4a5f-8a20-44902084d522/news.public.topics_topic" />
+    <entry file="dbDummy://dbtable:/7068dbe2/5fede16a-d0d9-4a5f-8a20-44902084d522/news.public.accounts_user" />
     <entry file="file://$PROJECT_DIR$/magazines/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -996,18 +584,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/7068dbe2/5fede16a-d0d9-4a5f-8a20-44902084d522/news.public.magazines_magazine">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/7068dbe2/5fede16a-d0d9-4a5f-8a20-44902084d522/news.public.magazines_magazine" />
     <entry file="file://$PROJECT_DIR$/magazines/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1015,18 +592,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/7068dbe2/5fede16a-d0d9-4a5f-8a20-44902084d522/news.public.articles_article">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/7068dbe2/5fede16a-d0d9-4a5f-8a20-44902084d522/news.public.articles_article" />
     <entry file="file://$PROJECT_DIR$/accounts/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
@@ -1034,33 +600,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/7068dbe2/5fede16a-d0d9-4a5f-8a20-44902084d522/news.public.authtoken_token">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/rest_framework/authtoken/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/7068dbe2/5fede16a-d0d9-4a5f-8a20-44902084d522/news.public.authtoken_token" />
+    <entry file="file:///usr/local/lib/python3.4/dist-packages/rest_framework/authtoken/serializers.py" />
     <entry file="file://$PROJECT_DIR$/accounts/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -1079,17 +620,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/django/db/models/deletion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/local/lib/python3.4/dist-packages/django/db/models/deletion.py" />
     <entry file="file://$PROJECT_DIR$/stats/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1111,36 +645,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/articles/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/django/db/models/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1429">
-          <caret line="355" column="6" selection-start-line="355" selection-start-column="6" selection-end-line="355" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/django/db/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-219">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/articles/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/local/lib/python3.4/dist-packages/django/db/models/base.py" />
+    <entry file="file:///usr/local/lib/python3.4/dist-packages/django/db/models/__init__.py" />
     <entry file="file://$PROJECT_DIR$/utils/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1148,51 +654,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/articles/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/articles/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/topics/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/topics/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/magazines/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="125">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
@@ -1200,9 +664,165 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        <state relative-caret-position="200">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/articles/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/articles/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1496595381148" expanded="true" signature="175:1249" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/articles/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-405">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/permissions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/articles/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="59" column="49" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/articles/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/exec.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/manage.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stats/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-780">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topics/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topics/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topics/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topics/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="10" column="61" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
+          <folding>
+            <marker date="1496595940923" expanded="true" signature="103:667" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topics/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <marker date="1496595929520" expanded="true" signature="96:307" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2130">
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
